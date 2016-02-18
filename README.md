@@ -1,4 +1,4 @@
-#A tool for League of Legends.
+#Summoner Spell tracker for League of Legends
 
 ##Idea
 This website let's you track the cooldowns of your opponent's summoner spells.
@@ -7,7 +7,7 @@ Start the timer with a tap on the summoner and you'll see when the spell goes of
 
 Included features:
 * Automatic recognization of "Insight" Mastery (15% CDR of Summoner Spells)
-* Distortion boots (toggle)
+* Distortion boots (manual toggle)
 
 ##Legal Note
 Since I use the Riot API, I need to include this:
