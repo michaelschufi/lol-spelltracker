@@ -1,0 +1,166 @@
+.container {
+	position: relative;
+	min-height: 100vh;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10vmin;
+	background-color: #333333;
+}
+
+footer > div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	line-height: 10vmin;
+	vertical-align: middle;
+}
+
+p {
+	margin: 0;
+}
+
+.home {
+	text-align: center;
+}
+
+.home > .title {
+	font-size: 12.5vmin;
+	line-height: 20vmin;
+	font-weight: bold;
+	padding-top: 5vmin;
+	margin-bottom: 5vmin;
+}
+
+.home > form > input {
+	margin: 4vmin 0;
+	text-align: center;
+	font-size: 8vmin;
+	max-width: 90vmin;
+}
+
+.home > form > button {
+	border: solid 1px black;
+	padding: 1vmin;
+	margin-top: 3vmin;
+	font-size: 7vmin;
+}
+
+.Matchup > .title {
+	display: none;
+}
+
+.MatchupMain {
+	margin: 0 2vw;
+	padding: 2vh 0;
+	width: 96vw;
+	/* remaining height 86vh */
+}
+
+.MatchupSummoner {
+	display: inline-block;
+	position: relative;
+	margin-left: 1.5vw;
+	overflow: hidden;
+	width: 18vw;
+	height: 86vh;
+}
+
+.MatchupSummoner:first-child {
+	margin-left: 0;
+}
+
+.MatchupSummoner > .bgi {
+	border-radius: 1em;
+	display: block;
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.65;
+	z-index: -1;
+}
+
+.MatchupSummoner > .front {
+	margin: 1vh 1vw;
+	/* remaining height 84vh */
+	overflow: hidden;
+}
+
+.MatchupSummoner > .front > * {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.MatchupSummoner p {
+	color: white;
+	text-shadow: 2px 0 2px black, -2px 0 2px black, 0 2px 2px black, 0 -2px 2px black;
+}
+
+.MatchupSummoner > .front > .text {
+	height: 13vh;
+	width: 100%;
+	line-height: 13vh;
+	margin-bottom: 3vh;
+}
+
+.MatchupSummoner > .front > .text > p > br {
+	margin: 0;
+}
+
+.MatchupSummoner > .front > .text > p {
+	display: inline-block;
+	line-height: normal;
+	vertical-align: middle;
+}
+
+.MatchupSummoner > .front > .text > p > .champName {
+	font-weight: bold;
+}
+
+.MatchupSummoner > .front > .text > p > .summonerName {
+	font-size: 0.8em;
+}
+
+.MatchupSummoner > .front > .SummonerSpell {
+	display: block;
+	position: relative;
+	height: 22vh;
+	width: 22vh;
+	margin-bottom: 2vh;
+}
+
+.SummonerSpell > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5em;
+}
+
+.SummonerSpell > p {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	margin-top: -0.55em;
+}
+
+.MatchupSummoner > .front > .distortion {
+	display: block;
+	border-radius: 0.5em;
+	height: 16vh;
+	width: 16vh;
+	margin: 0 auto;
+	margin-top: 2vh;
+	margin-bottom: 0;
+}
