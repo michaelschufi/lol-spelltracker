@@ -6,8 +6,10 @@ This website let's you track the cooldowns of your opponent's summoner spells.
 Start the timer with a tap on the summoner and you'll see when the spell goes off cooldown.
 
 Included features:
-* Automatic recognization of "Insight" Mastery (15% CDR of Summoner Spells)
+* Automatic detection of "Insight" Mastery (15% CDR of Summoner Spells)
 * Distortion boots (manual toggle)
+
+Currently only the region EUW is supported.
 
 ##Legal Note
 Since I use the Riot API, I need to include this:
