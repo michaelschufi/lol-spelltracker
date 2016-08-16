@@ -68,10 +68,6 @@ MatchupMain = React.createClass( {
 
 		let component = this
 		return opponents.map( opponent => {
-			let spellsAffectedByDist = [ 12, 6, 4 ]
-			let distAffected1 = spellsAffectedByDist.indexOf( opponent.spell1Id ) != -1 ? true : false
-			let distAffected2 = spellsAffectedByDist.indexOf( opponent.spell2Id ) != -1 ? true : false
-
 			console.log( opponent.masteries )
 			let filteredMasteries = opponent.masteries.filter( mastery => {
 				return mastery.masteryId === 6241 && mastery.rank >= 1
@@ -89,14 +85,11 @@ MatchupMain = React.createClass( {
 				spell1={ {
 					src: SummonerSpellImageData.findOne( { spellId: opponent.spell1Id } ).icon,
 					cooldown: SummonerSpells.findOne( { id: opponent.spell1Id } ).cooldown,
-					distAffected: distAffected1
 				} }
 				spell2={ {
 					src: SummonerSpellImageData.findOne( { spellId: opponent.spell2Id } ).icon,
 					cooldown: SummonerSpells.findOne( { id: opponent.spell2Id } ).cooldown,
-					distAffected: distAffected2
 				} }
-				distortionImg="http://ddragon.leagueoflegends.com/cdn/5.23.1/img/item/1318.png"
 				hasInsightMastery={ hasInsightMastery }
 			/>;
 		} )

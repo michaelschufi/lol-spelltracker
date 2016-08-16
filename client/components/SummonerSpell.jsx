@@ -1,7 +1,6 @@
 SummonerSpell = React.createClass( {
 	propTypes: {
 		cooldown: React.PropTypes.number.isRequired,
-		distAffected: React.PropTypes.bool.isRequired
 	},
 
 	mixins: [TimerMixin],
@@ -19,10 +18,6 @@ SummonerSpell = React.createClass( {
 		if (! this.state.onCooldown ) {
 			this.endTime = Date.now() + this.props.cooldown * 1000
 
-			if ( this.props.distAffected && this.props.distortionActive.get() ) {
-				// TODO dynamically get CDR
-				this.endTime -= ( 15 / 100 * this.props.cooldown ) * 1000
-			}
 			if ( this.props.hasInsightMastery ) {
 				this.endTime -= ( 15 / 100 * this.props.cooldown ) * 1000
 			}
