@@ -14,12 +14,12 @@ Currently only the region EUW is supported.
 
 The tool is currently built with Meteor. To run it for yourself follow these steps:
 
-1. Clone the repository
-1. Adjust the API key variable in the file `server/lib/apiKey.js`
-1. Install Meteor (https://www.meteor.com/install)
+1. Clone the repository.
+1. Adjust the API key variable in the file `server/lib/apiKey.js`.
+1. Install Meteor (https://www.meteor.com/install).
 1. Run Meteor in the repository directory.
 
 ##Legal Note
-Since I use the Riot API, I need to include this:
+Since the tool needs the Riot API in order to work, I need to include this:
 
 This project isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
