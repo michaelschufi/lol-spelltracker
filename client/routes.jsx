@@ -8,7 +8,7 @@ Routes = React.createClass( {
 			<Router history={ browserHistory }>
 				<Route component={ App }>
 					<Route path="/" components={ { main:Home, footer:Footer } } />
-					<Route path="/matchup" components={ { main:Matchup } } />
+					<Route path="/matchup" components={ { main:Matchup, footer:Footer } } />
 				</Route>
 			</Router>
 		);
